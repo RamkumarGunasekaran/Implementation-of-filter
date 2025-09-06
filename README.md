@@ -26,8 +26,7 @@ Anaconda - Python 3.7
 
 i) Using Averaging Filter
 ```Python
-# Developed By: KAVI NILAVAN DK
-# Register Number: 212223230103
+
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
@@ -70,8 +69,6 @@ else:
 
 ii) Using Weighted Averaging Filter
 ```Python
-# Developed By: KAVI NILAVAN DK
-# Register Number: 212223230103
 
 kernel1=np.array([[1,2,1],[2,4,2],[1,2,1]])/16
 image3=cv2.filter2D(image2,-1,kernel1)
@@ -93,8 +90,7 @@ plt.show()
 
 iii) Using Gaussian Filter
 ```Python
-# Developed By: KAVI NILAVAN DK
-# Register Number: 212223230103
+
 
 gaussian_blur=cv2.GaussianBlur(image2,(33,33),0,0)
 plt.imshow(gaussian_blur)
@@ -118,8 +114,6 @@ plt.show()
 iv)Using Median Filter
 ```Python
 
-# Developed By: KAVI NILAVAN DK
-# Register Number: 212223230103
 
 median = cv2.medianBlur(image2, 13)
 plt.imshow(cv2.cvtColor(median, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for correct color display
@@ -139,8 +133,6 @@ plt.show()
 ### 2. Sharpening Filters
 i) Using Laplacian Linear Kernal
 ```Python
-# Developed By: KAVI NILAVAN DK
-# Register Number: 212223230103
 
 kernel2=np.array([[-1,-1,-1],[2,-2,1],[2,1,-1]])
 image3=cv2.filter2D(image2,-1,kernel2)
@@ -158,9 +150,6 @@ plt.show()
 
 ii) Using Laplacian Operator
 ```Python
-
-# Developed By: KAVI NILAVAN DK
-# Register Number: 212223230103
 
 laplacian=cv2.Laplacian(image2,cv2.CV_64F)
 plt.imshow(laplacian)
